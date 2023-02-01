@@ -1,27 +1,28 @@
-.destination-container {
+.sections-container {
   display: flex;
   justify-content: space-between;
 }
-.destination-container--left {
+.sections-container--left {
   margin-left: 16.5rem;
   margin-top: 7.6rem;
 }
-.destination-heading {
+.sections-heading {
   font-size: var(--sb-fs-bg);
   text-transform: uppercase;
   letter-spacing: 4.72px;
   font-weight: 400;
   margin-bottom: 9.7rem;
 }
-.destination-heading > span {
+.sections-heading > span {
   color: var(--white-darker);
   font-weight: 700;
   margin-right: 2.8rem;
+  color: var(--white);
 }
 .destination-image {
   margin-left: 23rem;
 }
-.destination-container--right {
+.sections-container--right {
   max-width: 40.5rem;
   margin-right: 16.5rem;
   margin-top: 17.4rem;

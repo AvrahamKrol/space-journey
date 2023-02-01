@@ -1,12 +1,22 @@
+import { useContext } from 'react';
 import PagesWrapper from '../../components/PagesWrapper';
 import Navigation from '../../components/Navigation';
-import Heading from '../../components/Heading';
+import CrewSection from '../../components/sections/CrewSection';
+import { Context } from '../../lib/Context/SelectedContext';
 
-const CrewPage = () => {
+const CrewPage = ({crewMembers}) => {
+  const [selectedMemberId, setSelectedMemberId] = useContext(Context);
+  const crewMember = crewMembers.find((member, index) =>
+    +selectedMemberId === index);
+
   return (
     <PagesWrapper>
       <Navigation />
-      <Heading />
+      <CrewSection
+        crewMember={crewMember}
+        onSelectedId={setSelectedMemberId}
+        crewLength={crewMembers.length}
+      />
     </PagesWrapper>
   );
 };

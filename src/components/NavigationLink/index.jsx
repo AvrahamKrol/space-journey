@@ -5,11 +5,14 @@ const NavigationLink = ({ planets, onSelectPlanet }) => {
   const [active, setActive] = useState('MOON');
 
   const activateHandler = (event) => {
-    if (active !== event.target.innerText) {
-      setActive(event.target.innerText);
-      onSelectPlanet(event.target.innerText);
+    const btnText = event.target.innerText;
+
+    if (active !== btnText) {
+      setActive(btnText);
+      onSelectPlanet(btnText);
     }
   };
+  
   return planets.map((planet, id) => (
     <button
       key={id}

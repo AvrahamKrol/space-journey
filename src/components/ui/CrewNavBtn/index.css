@@ -1,0 +1,13 @@
+.crewBtn {
+  background-color: var(--white-darker);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: none;
+}
+.crewBtn:not(:last-child) {
+  margin-right: 2.4rem;
+}
+.crew-active{
+  background-color: var(--white);
+}
