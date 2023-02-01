@@ -6,11 +6,12 @@ import { Context } from '../../lib/Context/SelectedContext';
 
 const CrewPage = ({crewMembers}) => {
   const [selectedMemberId, setSelectedMemberId] = useContext(Context);
-  const crewMember = crewMembers.find((member, index) =>
-    +selectedMemberId === index);
+  const crewMember =
+    crewMembers.find((member, index) => +selectedMemberId === index) ||
+    crewMembers[0];
 
   return (
-    <PagesWrapper>
+    <PagesWrapper page='crew'>
       <Navigation />
       <CrewSection
         crewMember={crewMember}

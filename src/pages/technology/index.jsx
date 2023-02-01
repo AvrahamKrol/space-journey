@@ -4,7 +4,7 @@ import Heading from '../../components/Heading';
 
 const TechPage = () => {
   return (
-    <PagesWrapper isTech={true}>
+    <PagesWrapper page='tech'>
       <Navigation />
       <Heading />
     </PagesWrapper>

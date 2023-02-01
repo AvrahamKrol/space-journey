@@ -4,8 +4,9 @@ import './index.css';
 // import Image from '../../ui/Image';
 import CrewNavBtn from '../../ui/CrewNavBtn';
 
-const CrewSection = ({onSelectedId, crewMember, crewLength}) => {
-  const {role, name, bio, image} = crewMember
+const CrewSection = ({ onSelectedId, crewMember, crewLength }) => {
+  console.log(crewMember);
+  const { role, name, bio, image } = crewMember;
 
   return (
     <section className="sections-container">

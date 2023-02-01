@@ -20,7 +20,7 @@
   color: var(--white);
 }
 .destination-image {
-  margin-left: 23rem;
+  margin-left: 6.4rem;
 }
 .sections-container--right {
   max-width: 40.5rem;
@@ -41,6 +41,7 @@
   margin-top: 1.4rem;
   font-size: var(--text-fs);
   line-height: 3.2rem;
+  min-height: 13rem;
 }
 .destination-details {
   display: flex;
