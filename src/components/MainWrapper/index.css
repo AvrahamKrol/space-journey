@@ -1,0 +1,18 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+.blur {
+  width: 88rem;
+  height: 9.6rem;
+  position: absolute;
+  top: 6.2rem;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+  -webkit-backdrop-filter: blur(40.7742px);
+}

@@ -1,0 +1,19 @@
+.destination-btn {
+  background-color: transparent;
+  color: var(--white);
+  font-size: var(--nav-fs);
+  line-height: 1.92rem;
+  border: none;
+  padding: 1.2rem 0;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.2s ease-out;
+}
+.destination-btn:not(:last-child) {
+  margin-right: 3.5rem;
+}
+.destination-btn:hover {
+  border-bottom: 3px solid var(--white-darker);
+}
+.destination-active {
+  border-bottom: 3px solid var(--white) !important;
+}

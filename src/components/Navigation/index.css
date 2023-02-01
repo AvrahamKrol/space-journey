@@ -1,0 +1,50 @@
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6.4rem 16.5rem 0 5.5rem;
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  margin-left: 9.2rem;
+}
+.navigation ul {
+  display: flex;
+}
+.navigation ul span {
+  font-weight: 700;
+  margin-right: 1.2rem;
+}
+.navigation ul span,
+.navigation ul li a {
+  font-size: var(--nav-fs);
+  color: var(--white);
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+.navigation ul li {
+  padding: 3.58rem 0;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.2s ease-out;
+}
+.active {
+  padding: 3.58rem 0;
+  border-bottom: 3px solid var(--white) !important;
+}
+.navigation ul li:not(:last-child) {
+  margin-right: 5rem;
+}
+.navigation ul li:hover {
+  border-bottom: 3px solid var(--white-darker);
+}
+.line {
+  display: block;
+  height: 1px;
+  width: 43.7rem;
+  left: 16.7rem;
+  background: var(--white-darker);
+  z-index: 10;
+}

@@ -1,8 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+
+import HomePage from './pages/HomePage';
+import DestinationPage from './pages/Destination';
+import CrewPage from './pages/Crew';
+import TechPage from './pages/technology';
 
 function App() {
   return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/destination" element={<DestinationPage />} />
+      <Route path="/crew" element={<CrewPage />} />
+      <Route path="/technology" element={<TechPage />} />
+    </Routes>
+  );
+}
+
+export default App;
+/* 
+(
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -20,6 +36,4 @@ function App() {
       </header>
     </div>
   );
-}
-
-export default App;
+*/

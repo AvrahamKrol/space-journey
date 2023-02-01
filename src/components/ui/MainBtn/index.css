@@ -1,0 +1,32 @@
+.main-btn {
+  background-color: var(--white);
+  color: #000;
+  font-family: 'Bellefair';
+  font-size: var(--hd-fs-sm);
+  font-weight: 400;
+  border-radius: 50%;
+  text-transform: uppercase;
+  width: 27.4rem;
+  height: 27.4rem;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.main-btn:hover::after {
+  content: '';
+  display: block;
+  height: 45rem;
+  width: 45rem;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  transform: translate(10%, 10%);
+  background: var(--white);
+  opacity: 0.1;
+  border-radius: 50%;
+  transition: all 0.4s ease-out;
+}
+/* .main-btn:hover {
+  box-shadow: 0 0 0px rgba(255, 255, 255, 0.5);
+  transition: all 0.2s ease-out;
+} */
