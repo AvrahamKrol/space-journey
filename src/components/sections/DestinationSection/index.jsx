@@ -1,6 +1,6 @@
 import './index.css';
 import NavigationLink from '../../NavigationLink';
-import Image from '../../ui/Image';
+import { DestinationImage } from '../../ui/Images';
 
 const DestinationSection = ({ destination, navNames, onSelectPlanet }) => {
   const pic = destination.images.png;
@@ -12,7 +12,7 @@ const DestinationSection = ({ destination, navNames, onSelectPlanet }) => {
           Pick your destination
         </h3>
         <div className="destination-image">
-          <Image imageSrc={pic} name={destination.name} />
+          <DestinationImage imageSrc={pic} name={destination.name} />
         </div>
       </section>
       <section className="sections-container--right">

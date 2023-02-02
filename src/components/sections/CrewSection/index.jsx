@@ -1,12 +1,12 @@
 import './index.css';
 
 //Components
-// import Image from '../../ui/Image';
 import CrewNavBtn from '../../ui/CrewNavBtn';
+import { CrewImage } from '../../ui/Images';
 
 const CrewSection = ({ onSelectedId, crewMember, crewLength }) => {
   console.log(crewMember);
-  const { role, name, bio, image } = crewMember;
+  const { role, name, bio, images } = crewMember;
 
   return (
     <section className="sections-container">
@@ -24,7 +24,9 @@ const CrewSection = ({ onSelectedId, crewMember, crewLength }) => {
           </div>
         </div>
       </section>
-      <section className="sections-container--right"></section>
+      <section className="sections-container--right">
+        <CrewImage imageSrc={images.png} name={name} />
+      </section>
     </section>
   );
 };
