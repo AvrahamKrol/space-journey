@@ -1,19 +1,19 @@
-.sections-container {
+.destination-container {
   display: flex;
   justify-content: space-between;
 }
-.sections-container--left {
+.destination-container--left {
   margin-left: 16.5rem;
   margin-top: 7.6rem;
 }
-.sections-heading {
+.destination-heading {
   font-size: var(--sb-fs-bg);
   text-transform: uppercase;
   letter-spacing: 4.72px;
   font-weight: 400;
   margin-bottom: 9.7rem;
 }
-.sections-heading > span {
+.destination-heading > span {
   color: var(--white-darker);
   font-weight: 700;
   margin-right: 2.8rem;
@@ -21,8 +21,10 @@
 }
 .destination-image {
   margin-left: 6.4rem;
+  width: 44.5rem;
+  height: 44.5rem;
 }
-.sections-container--right {
+.destination-container--right {
   max-width: 40.5rem;
   margin-right: 16.5rem;
   margin-top: 17.4rem;

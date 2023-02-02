@@ -9,9 +9,9 @@ const CrewSection = ({ onSelectedId, crewMember, crewLength }) => {
   const { role, name, bio, images } = crewMember;
 
   return (
-    <section className="sections-container">
-      <section className="sections-container--left">
-        <h3 className="sections-heading">
+    <section className="crew-container">
+      <section className="crew-container--left">
+        <h3 className="crew-heading">
           <span>02</span>
           Meet your crew
         </h3>
@@ -24,7 +24,7 @@ const CrewSection = ({ onSelectedId, crewMember, crewLength }) => {
           </div>
         </div>
       </section>
-      <section className="sections-container--right">
+      <section className="crew-container--right">
         <CrewImage imageSrc={images.png} name={name} />
       </section>
     </section>

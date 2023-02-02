@@ -5,9 +5,9 @@ import { DestinationImage } from '../../ui/Images';
 const DestinationSection = ({ destination, navNames, onSelectPlanet }) => {
   const pic = destination.images.png;
   return (
-    <section className="sections-container">
-      <section className="sections-container--left">
-        <h3 className="sections-heading">
+    <section className="destination-container">
+      <section className="destination-container--left">
+        <h3 className="destination-heading">
           <span>01</span>
           Pick your destination
         </h3>
@@ -15,7 +15,7 @@ const DestinationSection = ({ destination, navNames, onSelectPlanet }) => {
           <DestinationImage imageSrc={pic} name={destination.name} />
         </div>
       </section>
-      <section className="sections-container--right">
+      <section className="destination-container--right">
         <NavigationLink planets={navNames} onSelectPlanet={onSelectPlanet} />
         <div className="destination-description">
           <h2 className="dest-heading">{destination.name.toUpperCase()}</h2>
