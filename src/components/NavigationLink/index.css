@@ -19,5 +19,9 @@
 }
 .destination__link-container {
   display: flex;
-  justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  .destination__link-container {
+    justify-content: center;
+  }
 }

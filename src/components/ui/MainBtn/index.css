@@ -14,7 +14,7 @@
 .main-btn:hover::after {
   content: '';
   display: block;
-  height: 25rem;
+  height: 45rem;
   width: 45rem;
   position: absolute;
   left: -50%;
