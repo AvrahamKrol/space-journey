@@ -4,7 +4,13 @@ import './index.css';
 import TechNavBtn from '../../ui/TechNavBtn';
 import { TechImage } from '../../ui/Images';
 
-const TechSection = ({ onSelectTech, tech, crewLength }) => {
+const TechSection = ({ onSelectTech, tech, techLength }) => {
+  let image;
+  if (window.innerWidth.toString() <= '768') {
+    image = tech.images.landscape;
+    console.log(image);
+  } else image = tech.images.portrait;
+
   return (
     <section className="tech-container">
       <section className="tech-container--left">
@@ -14,7 +20,7 @@ const TechSection = ({ onSelectTech, tech, crewLength }) => {
         </h3>
         <div className="tech-details">
           <div className="tech-details__tech-navigation">
-            <TechNavBtn onSelectedId={onSelectTech} crewLength={3} />
+            <TechNavBtn onSelectedId={onSelectTech} crewLength={techLength} />
           </div>
           <div className="tech-details__details-container">
             <h4 className="tech-details__sub-heading">THE TERMINOLOGY…</h4>
@@ -24,7 +30,7 @@ const TechSection = ({ onSelectTech, tech, crewLength }) => {
         </div>
       </section>
       <section className="tech-container--right">
-        <TechImage imageSrc={tech.images.portrait} name={tech.name} />
+        <TechImage imageSrc={image} name={tech.name} />
       </section>
     </section>
   );

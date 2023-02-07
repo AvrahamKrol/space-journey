@@ -51,6 +51,7 @@
   line-height: 6.4rem;
   margin-top: 1.7rem;
   color: var(--white);
+  text-transform: uppercase;
 }
 .tech-details__details {
   font-size: var(--text-fs);
@@ -81,72 +82,61 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
   }
   .tech-container--left {
-    margin-left: 16.5rem;
-    margin-top: 7.6rem;
-    flex: 0 0 55%;
-    order:2;
+    margin-left: 0;
+    margin-top: 0;
+    order: 2;
   }
   .tech-heading {
-    font-size: var(--sb-fs-bg);
-    text-transform: uppercase;
-    letter-spacing: 4.72px;
-    font-weight: 400;
-    margin-bottom: 9.7rem;
-    color: var(--white);
+    font-size: 2rem;
+    letter-spacing: 3.375px;
+    position: absolute;
+    top: 5.3rem;
+    left: 4.18rem;
   }
   .tech-heading > span {
-    color: var(--white-darker);
-    font-weight: 700;
-    margin-right: 2.8rem;
+    margin-right: 1.6rem;
   }
   .tech-details {
     display: flex;
-    margin-top: 13.7rem;
-    margin-bottom: 21.4rem;
-    align-items: center;
+    flex-direction: column;
+    margin-top: 5.6rem;
+    margin-bottom: 0;
   }
   .tech-details__tech-navigation {
     display: flex;
-    flex-direction: column;
-    margin-right: 8rem;
+    flex-direction: row;
+    margin-right: 0;
   }
   .tech-details__details-container {
     max-width: 63rem;
-    display: flex;
-    flex-direction: column;
     max-height: 30rem;
+    margin-top: 4.4rem;
+    margin-bottom: 9.7rem;
+    text-align: center;
   }
   .tech-details__sub-heading {
-    font-family: var(--heading-font);
-    font-size: var(--sb-fs-sm);
-    font-weight: 400;
-    line-height: 1.9rem;
-    letter-spacing: 2.7px;
-    color: rgba(255, 255, 255, 0.5);
+    font-size: var(--nav-fs);
   }
   .tech-details__heading {
-    font-family: var(--heading-font);
-    font-size: var(--hd-fs-md);
-    font-weight: 400;
+    font-size: 4rem;
     line-height: 6.4rem;
-    margin-top: 1.7rem;
-    color: var(--white);
+    margin-top: 1.6rem;
   }
   .tech-details__details {
-    font-size: var(--text-fs);
-    font-weight: 400;
-    line-height: 3.2rem;
-    margin-top: 1.7rem;
-    max-width: 80%;
+    font-size: var(--nav-fs);
+    line-height: 2.8rem;
+    max-width: 70%;
+    margin: 1.6rem auto 0;
     min-height: 20rem;
   }
   .tech-container--right {
     order: 1;
+    width: 100%;
   }
   .tech-container--right img {
-    max-width: 100%;
-    margin-top: 20.6rem;
+    margin-top: 12.6rem;
   }
 }

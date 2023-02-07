@@ -11,7 +11,7 @@ const TechPage = ({techs}) => {
   return (
     <PagesWrapper page="tech">
       <Navigation />
-      <TechSection tech={technology} onSelectTech={setSelectedTech} />
+      <TechSection tech={technology} onSelectTech={setSelectedTech} techLength={techs.length} />
     </PagesWrapper>
   );
 };

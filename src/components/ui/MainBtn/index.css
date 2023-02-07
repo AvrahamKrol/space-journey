@@ -48,10 +48,11 @@
 }
 @media only screen and (max-width: 768px) {
   .main-btn {
-    padding: 95px 50px;
+    padding: 105px 54px;
+    margin-bottom: 1rem;
   }
   .main-btn:hover::after {
-    transform: translate(17%, 15%);
+    transform: translate(20%, 19%);
     height: 35rem;
     width: 35rem;
   }

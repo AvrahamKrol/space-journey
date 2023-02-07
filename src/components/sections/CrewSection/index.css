@@ -88,10 +88,13 @@
     text-align: center;
   }
   .crew-heading {
-    margin-left: -40rem;
+    margin-left: -45.9rem;
     margin-bottom: 6rem;
-    margin-top: 5rem;
+    margin-top: 5.3rem;
     font-size: 2rem;
+  }
+  .crew-heading span {
+    margin-right: 1.6rem;
   }
   .crew-details {
     display: flex;

@@ -84,6 +84,9 @@
     margin-bottom: 6rem;
     font-size: 2rem;
   }
+  .destination-heading > span {
+    margin-right: 1.6rem;
+  }
   .destination-description {
     display: flex;
     flex-direction: column;
