@@ -5,9 +5,10 @@
   min-width: 100%;
   min-height: 100vh;
   position: relative;
+  background-image: url('../../assets/home/background-home-desktop.jpg');
 }
 .blur {
-  width: 88rem;
+  width: 61.11%;
   height: 9.6rem;
   position: absolute;
   top: 6.2rem;
@@ -15,4 +16,25 @@
   background-color: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(40.7742px);
   -webkit-backdrop-filter: blur(40.7742px);
+}
+@media only screen and (max-width: 1200px) {
+  .blur {
+    width: 64.11%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .blur {
+    width: 80.11%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main {
+    background-image: url('../../assets/home/background-home-tablet.jpg');
+    min-height: 100%;
+  }
+  .blur {
+    /* height: 9.9rem; */
+    width: 45rem;
+    top: 0;
+  }
 }

@@ -1,7 +1,6 @@
 // import './index.css';
 
 export const DestinationImage = ({ imageSrc, name }) => {
-  console.log(imageSrc);
   const marsImg = '../../../../assets/destination/image-mars.png';
   const europeImg = '../../../../assets/destination/image-europa.png';
   const titanImg = '../../../../assets/destination/image-titan.png';

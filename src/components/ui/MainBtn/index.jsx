@@ -1,7 +1,12 @@
+import { Link } from 'react-router-dom';
 import './index.css';
 
 const MainBtn = () => {
-  return <button className="main-btn">Explore</button>;
+  return (
+    <Link to="/destination" className="main-btn">
+      Explore
+    </Link>
+  );
 };
 
 export default MainBtn;

@@ -17,3 +17,7 @@
 .destination-active {
   border-bottom: 3px solid var(--white) !important;
 }
+.destination__link-container {
+  display: flex;
+  justify-content: center;
+}

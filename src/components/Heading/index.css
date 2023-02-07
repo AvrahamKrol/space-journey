@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin: 27.5rem 16.5rem 13.5rem;
+  margin: 18.5rem 16.5rem 20.5rem;
 }
 .info-container {
   display: flex;
@@ -25,4 +25,35 @@
 .text-fs {
   font-size: var(--text-fs);
   line-height: 3.2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .heading-container {
+    margin: 13.5rem 10.5rem 13.5rem;
+  }
+  .hd-fs-xsm {
+    font-size: 2.8rem;
+  }
+  .hd-fs-xbg {
+    font-size: var(--hd-fs-bg);
+    margin: 2.4rem 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .heading-container {
+    margin: 14.5rem 15.9rem 9rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-container {
+    margin-bottom: 15.6rem;
+    align-items: center;
+  }
+  .hd-fs-xsm {
+    font-size: 2rem;
+  }
+  .text-fs {
+    font-size: 1.6rem;
+    text-align: center;
+  }
 }

@@ -1,0 +1,15 @@
+.techBtn {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: 1px solid var(--white-darker);
+  color: var(--white);
+  background-color: transparent;
+}
+.techBtn:not(:last-child) {
+  margin-bottom: 3.2rem;
+}
+.tech-active {
+  background-color: var(--white);
+  color: #000;
+}

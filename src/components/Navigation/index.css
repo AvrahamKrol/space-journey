@@ -1,15 +1,15 @@
 .navigation-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin: 6.4rem 16.5rem 0 5.5rem;
+  justify-content: space-between;
+  margin: 6.6rem 11.45% 0 5.5rem;
 }
 .navigation {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
-  margin-left: 9.2rem;
+  z-index: 5;
+  margin-top: 3px;
 }
 .navigation ul {
   display: flex;
@@ -22,16 +22,16 @@
 .navigation ul li a {
   font-size: var(--nav-fs);
   color: var(--white);
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.27rem;
   text-transform: uppercase;
 }
 .navigation ul li {
-  padding: 3.58rem 0;
+  padding: 3.33rem 0;
   border-bottom: 3px solid transparent;
   transition: border-bottom 0.2s ease-out;
 }
 .active {
-  padding: 3.58rem 0;
+  padding: 3.33rem 0;
   border-bottom: 3px solid var(--white) !important;
 }
 .navigation ul li:not(:last-child) {
@@ -43,8 +43,48 @@
 .line {
   display: block;
   height: 1px;
-  width: 43.7rem;
+  width: 30.84%;
   left: 16.7rem;
   background: var(--white-darker);
   z-index: 10;
+}
+
+@media only screen and (max-width: 1200px) {
+  .navigation-container {
+    margin: 6.4rem 7.44% 0 5.5rem;
+  }
+  .line {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .navigation-container {
+    margin: 6.4rem 8.44% 0 5.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navigation ul span {
+    display: none;
+  }
+  .navigation ul li a {
+    font-size: 1.4rem;
+    letter-spacing: 0.236rem;
+  }
+  .navigation ul li {
+    padding: 3.6rem 0;
+  }
+  .active {
+    padding: 3.6rem 0;
+  }
+  .navigation ul li:not(:last-child) {
+    margin-right: 3.7rem;
+  }
+  .navigation-container {
+    margin: 0 4.6rem 0 3.9rem;
+  }
+}
+@-moz-document url-prefix() {
+  .navigation-container {
+    margin: 0 4.6rem 0 3.9rem;
+  }
 }

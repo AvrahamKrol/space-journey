@@ -3,7 +3,7 @@
   justify-content: space-between;
 }
 .destination-container--left {
-  margin-left: 16.5rem;
+  margin-left: 11.45%;
   margin-top: 7.6rem;
 }
 .destination-heading {
@@ -12,21 +12,19 @@
   letter-spacing: 4.72px;
   font-weight: 400;
   margin-bottom: 9.7rem;
+  color: var(--white);
 }
 .destination-heading > span {
   color: var(--white-darker);
   font-weight: 700;
-  margin-right: 2.8rem;
-  color: var(--white);
+  margin-right: 1.94%;
 }
 .destination-image {
-  margin-left: 6.4rem;
-  width: 44.5rem;
-  height: 44.5rem;
+  margin-left: 4.44%;
 }
 .destination-container--right {
   max-width: 40.5rem;
-  margin-right: 16.5rem;
+  margin-right: 11.45%;
   margin-top: 17.4rem;
 }
 .destination-description {
@@ -43,14 +41,14 @@
   margin-top: 1.4rem;
   font-size: var(--text-fs);
   line-height: 3.2rem;
-  min-height: 13rem;
+  min-height: 16rem;
 }
 .destination-details {
   display: flex;
   margin-bottom: 11.8rem;
 }
 .destination-details--left {
-  margin-right: 7.9rem;
+  margin-right: 5.48%;
 }
 .sb-fs-md {
   font-size: var(--sb-fs-sm);
@@ -65,4 +63,65 @@
   font-size: var(--sb-fs-bg);
   line-height: 3.2rem;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 1200px) {
+  .destination-image img {
+    width: 35.5rem;
+    height: 35.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .destination-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .destination-container--left {
+    margin-left: 1.5rem;
+    margin-top: 5.3rem;
+  }
+  .destination-heading {
+    margin-left: -20rem;
+    margin-bottom: 6rem;
+    font-size: 2rem;
+  }
+  .destination-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+  }
+  .dest-heading {
+    font-size: 8rem;
+  }
+  .dest-description {
+    min-height: 0;
+    text-align: center;
+    font-size: var(--nav-fs);
+    min-height: 10rem;
+  }
+  .destination-container--right {
+    max-width: 50rem;
+    margin-right: 0;
+    margin-top: 5.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .destination-image img {
+    width: 30rem;
+    height: 30rem;
+  }
+  .destination-details {
+    width: 100%;
+    margin-bottom: 6.2rem;
+    justify-content: space-around;
+  }
+  .destination-details--left {
+    text-align: center;
+    margin-right: 0;
+  }
+  .destination-details--right {
+    text-align: center;
+  }
 }

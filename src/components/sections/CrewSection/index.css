@@ -1,10 +1,10 @@
 .crew-container {
   display: flex;
-  /* justify-content: space-between; */
 }
 .crew-container--left {
   margin-left: 16.5rem;
   margin-top: 7.6rem;
+  height: 100%;
 }
 .crew-heading {
   font-size: var(--sb-fs-bg);
@@ -20,8 +20,7 @@
   margin-right: 2.8rem;
 }
 .crew-details {
-  margin-top: 15.4rem;
-  max-width: 63rem;
+  max-width: 65rem;
   margin-bottom: 9.4rem;
 }
 .crew-details__sub-heading {
@@ -45,12 +44,78 @@
   line-height: 3.2rem;
   margin-top: 2.7rem;
   max-width: 70%;
-  min-height: 13rem;
+  height: 16rem;
 }
 .crew-navigation {
-  margin-top: 8.8rem;
+  margin-top: 8rem;
 }
 .crew-container--right {
   display: flex;
   align-items: flex-end;
+}
+.crew-container--right img {
+  height: 90%;
+}
+@media only screen and (max-width: 1024px) {
+  .crew-container {
+    margin-bottom: 10rem;
+  }
+  .crew-details__details {
+    font-size: var(--text-fs);
+    line-height: 2.6rem;
+    margin-top: 2.7rem;
+    max-width: 80%;
+  }
+  .crew-navigation {
+    margin-top: 2rem;
+  }
+  .crew-container--right {
+    height: 65rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .crew-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .crew-container--left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 0;
+    text-align: center;
+  }
+  .crew-heading {
+    margin-left: -40rem;
+    margin-bottom: 6rem;
+    margin-top: 5rem;
+    font-size: 2rem;
+  }
+  .crew-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 65rem;
+    margin-bottom: 4rem;
+  }
+  .crew-details__sub-heading {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+  .crew-details__heading {
+    font-size: 4rem;
+    line-height: 4.6rem;
+    margin-top: 0.8rem;
+  }
+  .crew-details__details {
+    max-width: 80%;
+    text-align: center;
+    margin-top: 1.6rem;
+  }
+  .crew-container--right img {
+    height: auto;
+    margin-bottom: -10rem;
+  }
 }

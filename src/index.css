@@ -21,9 +21,14 @@
   --nav-fs: 1.6rem;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 html {
   min-width: 100%;
-  font-size: 62.5%;
+  font-size: 60%;
 }
 
 body {
@@ -69,4 +74,19 @@ button {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 57%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
 }

@@ -5,7 +5,6 @@ import CrewNavBtn from '../../ui/CrewNavBtn';
 import { CrewImage } from '../../ui/Images';
 
 const CrewSection = ({ onSelectedId, crewMember, crewLength }) => {
-  console.log(crewMember);
   const { role, name, bio, images } = crewMember;
 
   return (

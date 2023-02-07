@@ -12,8 +12,8 @@ const NavigationLink = ({ planets, onSelectPlanet }) => {
       onSelectPlanet(btnText);
     }
   };
-  
-  return planets.map((planet, id) => (
+
+  const planetsJSX = planets.map((planet, id) => (
     <button
       key={id}
       onClick={activateHandler}
@@ -26,6 +26,8 @@ const NavigationLink = ({ planets, onSelectPlanet }) => {
       {planet.toUpperCase()}
     </button>
   ));
+
+  return <div className="destination__link-container">{planetsJSX}</div>;
 };
 
 export default NavigationLink;
