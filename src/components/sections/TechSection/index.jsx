@@ -6,10 +6,11 @@ import { TechImage } from '../../ui/Images';
 
 const TechSection = ({ onSelectTech, tech, techLength }) => {
   let image;
-  if (window.innerWidth.toString() <= '768') {
+  if (window.innerWidth <= 768) {
+    console.log(window.innerWidth <= 768);
     image = tech.images.landscape;
-    console.log(image);
   } else image = tech.images.portrait;
+  console.log(image);
 
   return (
     <section className="tech-container">

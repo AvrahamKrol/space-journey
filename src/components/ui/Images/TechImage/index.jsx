@@ -5,8 +5,10 @@ export const TechImage = ({ imageSrc, name }) => {
     '../../../../assets/technology/image-space-capsule-portrait.jpg';
   const spaceportLandscape =
     '../../../../assets/technology/image-spaceport-landscape.jpg';
-  const spaceCapsuleLandscape = '../../../../assets/technology/image-space-capsule-landscape.jpg';
-  const launchVehicleLandscape = '../../../../assets/technology/image-launch-vehicle-landscape.jpg';
+  const spaceCapsuleLandscape =
+    '../../../../assets/technology/image-space-capsule-landscape.jpg';
+  const launchVehicleLandscape =
+    '../../../../assets/technology/image-launch-vehicle-landscape.jpg';
   let img;
 
   switch (true) {

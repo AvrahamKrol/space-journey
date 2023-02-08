@@ -11,19 +11,19 @@ import CrewBackgroundMob from '../../assets/crew/background-crew-mobile.jpg';
 
 const PagesWrapper = ({ children, page }) => {
   let bgImage;
-  console.log(page === 'dest' && window.innerWidth.toString() <= '768px');
-  console.log(window.innerWidth.toString() <= '768px');
-  if (page === 'dest' && window.innerWidth.toString() <= '375px') {
+  if (page === 'dest' && window.innerWidth <= 375) {
     bgImage = DestBackgroundMob;
-  } else if (page === 'crew' && window.innerWidth.toString() <= '375px') {
+  } else if (page === 'crew' && window.innerWidth <= 375) {
+    console.log(window.innerWidth <= 375);
     bgImage = CrewBackgroundMob;
-  } else if (page === 'tech' && window.innerWidth.toString() <= '375px') {
+  } else if (page === 'tech' && window.innerWidth <= 375) {
+    console.log(window.innerWidth <= 375);
     bgImage = TechBackgroundMob;
-  } else if (page === 'dest' && window.innerWidth.toString() <= '768px') {
+  } else if (page === 'dest' && window.innerWidth <= 768) {
     bgImage = DestBackgroundTab;
-  } else if (page === 'crew' && window.innerWidth.toString() <= '768px') {
+  } else if (page === 'crew' && window.innerWidth <= 768) {
     bgImage = CrewBackgroundTab;
-  } else if (page === 'tech' && window.innerWidth.toString() <= '768px') {
+  } else if (page === 'tech' && window.innerWidth <= 768) {
     bgImage = TechBackgroundTab;
   } else if (page === 'dest') {
     bgImage = DestBackgroundDesc;
