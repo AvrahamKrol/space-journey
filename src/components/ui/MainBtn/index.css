@@ -6,7 +6,7 @@
   font-weight: 400;
   border-radius: 50%;
   text-transform: uppercase;
-  padding: 110px 60px;
+  padding: 130px 80px;
   display: block;
   position: relative;
   cursor: pointer;
@@ -19,7 +19,7 @@
   position: absolute;
   left: -50%;
   top: -50%;
-  transform: translate(8%, 8%);
+  transform: translate(17%, 18%);
   background: var(--white);
   opacity: 0.1;
   border-radius: 50%;

@@ -25,3 +25,8 @@
     justify-content: center;
   }
 }
+@media only screen and (max-width: 520px) {
+  .destination-btn {
+    font-size: 1.4rem;
+  }
+}
