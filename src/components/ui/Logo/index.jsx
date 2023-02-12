@@ -1,9 +1,9 @@
 import './index.css';
 
-const Logo = ({ width, height }) => {
+const Logo = () => {
   return (
     <div className="logo">
-      <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height}>
+      <svg xmlns="http://www.w3.org/2000/svg" width='48' height='48'>
         <g fill="none" fillRule="evenodd">
           <circle cx="24" cy="24" r="24" fill="#FFF" />
           <path

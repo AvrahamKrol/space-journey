@@ -8,16 +8,19 @@ import CrewBackgroundTab from '../../assets/crew/background-crew-tablet.jpg';
 import TechBackgroundMob from '../../assets/technology/background-technology-mobile.jpg';
 import DestBackgroundMob from '../../assets/destination/background-destination-mobile.jpg';
 import CrewBackgroundMob from '../../assets/crew/background-crew-mobile.jpg';
+import Modal from '../ui/Modal';
 
-const PagesWrapper = ({ children, page }) => {
+const PagesWrapper = ({ children, page, isModalActive, onCloseModal }) => {
+  console.log('PagesWrapper: ', isModalActive);
+  const isMobile = window.innerWidth <= 520;
+
   let bgImage;
+
   if (page === 'dest' && window.innerWidth <= 375) {
     bgImage = DestBackgroundMob;
   } else if (page === 'crew' && window.innerWidth <= 375) {
-    console.log(window.innerWidth <= 375);
     bgImage = CrewBackgroundMob;
   } else if (page === 'tech' && window.innerWidth <= 375) {
-    console.log(window.innerWidth <= 375);
     bgImage = TechBackgroundMob;
   } else if (page === 'dest' && window.innerWidth <= 768) {
     bgImage = DestBackgroundTab;
@@ -40,6 +43,9 @@ const PagesWrapper = ({ children, page }) => {
         backgroundPosition: 'center',
       }}
     >
+      {isMobile && (
+        <Modal isModalActive={isModalActive} onCloseModal={onCloseModal} />
+      )}
       <div className="blur"></div>
       {children}
     </main>
