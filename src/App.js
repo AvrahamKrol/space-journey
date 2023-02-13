@@ -9,14 +9,17 @@ import data from './data.json';
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
+      <Route path="/space-journey" element={<HomePage />} />
       <Route
-        path="/destination"
+        path="/space-journey/destination"
         element={<DestinationPage destinations={data.destinations} />}
       />
-      <Route path="/crew" element={<CrewPage crewMembers={data.crew} />} />
       <Route
-        path="/technology"
+        path="/space-journey/crew"
+        element={<CrewPage crewMembers={data.crew} />}
+      />
+      <Route
+        path="/space-journey/technology"
         element={<TechPage techs={data.technology} />}
       />
     </Routes>

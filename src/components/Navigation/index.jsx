@@ -17,7 +17,7 @@ const Navigation = ({ onOpenModal }) => {
             <li>
               <NavLink
                 className={({ isActive }) => (isActive ? 'active' : '')}
-                to="/"
+                to="/space-journey"
               >
                 <span>00</span>
                 Home
@@ -26,7 +26,7 @@ const Navigation = ({ onOpenModal }) => {
             <li>
               <NavLink
                 className={({ isActive }) => (isActive ? 'active' : '')}
-                to="/destination"
+                to="/space-journey/destination"
               >
                 <span>01</span>
                 Destination
@@ -35,7 +35,7 @@ const Navigation = ({ onOpenModal }) => {
             <li>
               <NavLink
                 className={({ isActive }) => (isActive ? 'active' : '')}
-                to="/crew"
+                to="/space-journey/crew"
               >
                 <span>02</span>Crew
               </NavLink>
@@ -43,7 +43,7 @@ const Navigation = ({ onOpenModal }) => {
             <li>
               <NavLink
                 className={({ isActive }) => (isActive ? 'active' : '')}
-                to="/technology"
+                to="/space-journey/technology"
               >
                 <span>03</span>Technology
               </NavLink>
